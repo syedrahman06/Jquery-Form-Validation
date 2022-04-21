@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -22,11 +25,12 @@
         <div class="modal-content">
 
             <div class="modal-body">
-                <form role="form" id="form" class="experience_form" method="POST">
+                <form role="form" id="formValidation" name="formValidation" class="experience_form" method="POST"
+                    action="valid.html">
 
                     <div class="form-group education_completion_status_container">
 
-                        <div class="input-group" id="">
+                        <div class="input-group" id="" required>
                             <div class="start-year radio">
                                 <input type="radio" id="starting" name="group" value="starting">
                                 <label>
@@ -47,7 +51,7 @@
                             Full Name
                         </label>
                         <input type="text" class="form-control ui-autocomplete-input" name="name"
-                            placeholder="Enter Your Full Name">
+                            placeholder="Enter Your Full Name" required>
                     </div>
 
 
@@ -56,7 +60,7 @@
                             Email
                         </label>
                         <input type="email" class="form-control ui-autocomplete-input" name="email"
-                            placeholder="Enter Your Email">
+                            placeholder="Enter Your Email" required>
                     </div>
 
 
@@ -64,8 +68,8 @@
                         <label for="organization" class="control-label">
                             Phone Number
                         </label>
-                        <input type="number" class="form-control ui-autocomplete-input" name="number"
-                            placeholder="( +91 )">
+                        <input type="number" class="form-control ui-autocomplete-input" name="phone"
+                            placeholder="( +91 )" required>
                     </div>
 
 
@@ -78,7 +82,7 @@
                             </label>
                             <div class="datepicker_wrapper left">
                                 <input type="date" class="form-control start-date hasDatepicker" id="start_date"
-                                    name="start_date" placeholder="Choose date">
+                                    name="start_date" placeholder="Choose date" required>
                             </div>
                         </div>
                         <div class="input_group_section form-group with_below_checkbox">
@@ -87,7 +91,7 @@
                             </label>
                             <div class="datepicker_wrapper right">
                                 <input type="date" class="form-control end-date hasDatepicker" id="end_date"
-                                    name="end_date" placeholder="Choose date">
+                                    name="end_date" placeholder="Choose date" required>
                             </div>
                         </div>
                     </div>
@@ -113,15 +117,16 @@
 
                         <div class="has_char_count">
                             <textarea type="text" rows="4" class="form-control" id="description"
-                                placeholder="Short description of work done (max 250 char) "
-                                name="description"></textarea>
+                                placeholder="Short description of work done (max 250 char) " name="description"
+                                required></textarea>
                             <label class="char_count char_count_default">0/250</label>
                         </div>
                     </div>
 
 
                     <div class="buttons_container modal_button">
-                        <button class="btn btn-primary " id="submit" type="submit" name="submit">Submit</button>
+                        <button class="btn btn-primary " id="submit" type="submit" name="submit"
+                            value="submit">Submit</button>
                     </div>
 
 
@@ -131,6 +136,9 @@
         </div>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="custom.js"></script>
 
 </body>
 

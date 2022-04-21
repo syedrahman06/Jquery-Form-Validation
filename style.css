@@ -70,3 +70,12 @@ body {
 .experience_form .input_group_two_sections .input_group_section:nth-last-of-type(1) {
     margin-right: 0;
 }
+
+
+label.error {
+    font-weight: 700;
+    display: block;
+    color: #f00;
+    font-size: 14px;
+    float: right;
+}
