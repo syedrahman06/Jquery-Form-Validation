@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 213, 213) !important;
+}
+
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+    outline: 0;
+    padding: 32px;
+    background: #FFF;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 8%);
+    border-radius: 6px;
+    border: 0;
+
+}
+
+
+.form-group {
+    clear: both;
+    margin-bottom: 16px;
+}
+
+.experience_form .input_group_two_sections {
+    flex-wrap: nowrap !important;
+}
+
+.input-group .radio {
+    margin-right: 24px;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.experience_form .input_group_two_sections .input_group_section {
+    flex-grow: 1;
+    width: 100%;
+    margin-right: 12px;
+}
+
+.form-group.with_below_checkbox {
+    margin-bottom: 12px;
+}
+
+.experience_form .input_group_two_sections .input_group_section:nth-last-of-type(1) {
+    margin-right: 0;
+}
